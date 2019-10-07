@@ -32,7 +32,6 @@ Caso não exista esse filtro, todos os registros da tabela serão deletados
 Por padrão caso algum campo da tabela seja chave estrangeira em outra não é possível deletar o registro devido a regras de integridade
 Esse comportamento pode ser alterado, 
 por exemplo de modo que sempre o registro da tabela pai for deletado, o registro da tabela filha também seja
-Essa alteração deve ser feita na constraint
 */
 
 SELECT * FROM customers;
