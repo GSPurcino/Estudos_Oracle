@@ -17,7 +17,7 @@ status VARCHAR2(10),
 last_modified DATE DEFAULT SYSDATE
 );
 
---Exemplo de criação d etable temporaria(Preserva registros no commt)
+--Exemplo de criação de tabela temporaria(Preserva registros no commt)
 CREATE GLOBAL TEMPORARY TABLE order_status_temp (
     id              INTEGER,
     status          VARCHAR2(10),
@@ -129,7 +129,6 @@ MODIFY status VARCHAR2(15);
 ALTER TABLE order_status2
 MODIFY id NUMBER(5);
 
-
 --Observação: Só é possível diminuir o tamanho da coluna ou a precisão numerica 
 --se a tabela não tem registros ou a coluna seja nula em todos os registros da tabela
 
@@ -148,7 +147,6 @@ ALTER TABLE order_status2
 DROP COLUMN initially_created;
 
 DESCRIBE order_status2;
-
 
 -------------------------------------CONSTRAINTS----------------------------------
 
